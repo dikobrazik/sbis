@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>My test page</title>
+      <link href="styles/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container" style="height: 5vh;">
+         <a id="help">Помощь</a>
+      </div>
+      <div class="container" style="height: 35vh;">
+      </div>
+      <div class="container" style="margin-top: 10vh; align-items: stretch">
+         <span class="input">
+            <input type="text" id="values">
+            <span></span>
+         </span>
+         <button title="А вот и я!" class="styled-button" id="add">Добавить</button>
+      </div>
+      <div class="container" style="margin-top: 2vh; align-items: stretch">
+         <p style="color:white">ИЛИ</p>
+      </div>
+      <div class="container" style="margin-top: 2vh; align-items: stretch">
+         <button class="styled-button" id="generate">Генерировать набор данных</button>
+         <button class="styled-button" id="clear">Очистить график</button>
+      </div>
+      <div class="container" style="margin-top: 2vh; align-items: stretch">
+         <button class="styled-button" id="start">Начать сортировку</button>
+      </div>
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <div class="carousel">
+               <input type="checkbox" class="faux-ui-facia"> 
+               <div class="slide" slide="4" annot='Для очистки данных необходимо нажать на кнопку "Очистить график"'>
+                  <img src="images/empty-page.png" alt="Slide 4">
+               </div>
+               <input type="checkbox" class="faux-ui-facia"> 
+               <div class="slide" slide="3" annot="Для начала анимации сортировки необходимо нажать на кнопку 'Начать сортировку'">
+                  <img src="images/sorting.png" alt="Slide 3">
+               </div>
+               <input type="checkbox" class="faux-ui-facia"> 
+               <div class="slide" slide="2" annot="Так же данные можно добавить вручную. По одному числу, или же набором в виде '15,12,10,14,55,2,3'. После чего необходимо нажать на кнопку 'Добавить'">
+                  <img src="images/add-data.png"  alt="Slide 2">
+               </div>
+               <input type="checkbox" class="faux-ui-facia">
+               <div class="slide" slide="1" annot="Для генерации данных можно воспользоваться кнопкой 'Генерировать набор данных'">
+                  <img src="images/data-set-gen.png"  alt="Slide 1">
+               </div>
+            </div>
+            <a class="styled-button" id="close" style="margin-top: 5px">Закрыть</a>
+         </div>
+      </div>
+      <script src="scripts/chart.js"></script>
+      <script src="scripts/scripts.js"></script>
+   </body>
+</html>
